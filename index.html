@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Researchion — An Integrated Research Ecosystem</title>
+  <meta name="description" content="Researchion: building an integrated ecosystem for research workflows and knowledge creation." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Researchion — An Integrated Research Ecosystem" />
+  <meta property="og:description" content="Researchion: building an integrated ecosystem for research workflows and knowledge creation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://researchion.com/" />
+
+  <style>
+  :root{
+    --brand:#ff6600;
+    --text:#2B2D2F;
+    --muted:#555;
+    --bg:#f6f5f2;
+    --card:#ffffff;
+    --border:rgba(7,79,155,.2);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial;
+    color:var(--text);
+    background:linear-gradient(180deg,var(--bg),#fff);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+
+  header{padding:48px 20px 24px; text-align:center}
+  header img{
+    max-width:120px;
+    height:auto;
+    margin-bottom:12px;
+  }
+  .logo{
+    font-weight:800;
+    letter-spacing:.5px;
+    color:var(--brand);
+    font-size:clamp(28px,5vw,44px);
+  }
+  .tag{
+    margin-top:6px;
+    color:var(--muted);
+    font-size:clamp(15px,2.3vw,19px);
+  }
+  .slogan{
+    margin-top:6px;
+    font-size:clamp(14px,2vw,18px);
+    font-style:italic;
+    color:#333;
+  }
+
+  main{
+    display:flex; align-items:center; justify-content:center;
+    padding:24px 20px 40px;
+  }
+  .card{
+    width:min(820px,92vw);
+    background:var(--card);
+    border-radius:18px;
+    padding:28px 24px;
+    box-shadow:0 12px 30px rgba(0,0,0,.06), 0 2px 8px rgba(0,0,0,.03);
+    text-align:center;
+    border:1px solid rgba(0,0,0,.03);
+  }
+  .pill{
+    display:inline-block;
+    padding:10px 16px;
+    border-radius:999px;
+    border:1px solid var(--border);
+    color:var(--brand);
+    background:rgba(7,79,155,.06);
+    font-weight:600;
+    letter-spacing:.2px;
+  }
+  h1{
+    margin:10px 0 0;
+    font-size:clamp(22px,3.2vw,28px);
+    line-height:1.3;
+  }
+  p{margin:10px auto; max-width:60ch; line-height:1.65}
+  .cta{margin-top:18px}
+  .cta a{
+    display:inline-block; text-decoration:none;
+    border:1px solid var(--brand); color:#fff; background:var(--brand);
+    padding:12px 18px; border-radius:12px; font-weight:700
+  }
+
+  footer{
+    padding:28px 20px;
+    text-align:center;
+    color:#777;
+    font-size:14px
+  }
+  a.min{color:var(--brand); text-underline-offset:3px}
+</style>
+
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Researchion logo">
+    <div class="logo">Researchion</div>
+    <div class="tag">An Integrated Research Ecosystem</div>
+    <div class="slogan">Together. Building Knowledge. Intelligently.</div>
+  </header>
+
+  <main>
+    <div class="card" role="region" aria-label="Coming soon">
+      <div class="pill" aria-hidden="true">🚀 Coming Soon</div>
+      <h1>We’re building tools that make research faster, clearer, and more reproducible.</h1>
+      <p>If you’d like early access or to hear about our launch, drop us a note.</p>
+      <div class="cta">
+        <a href="mailto:researchion.project@gmail.com">Get Early Access</a>
+      </div>
+      <p style="margin-top:14px;font-size:14px;color:#666">
+        Prefer LinkedIn/Twitter? Secure handles are coming soon; this is a temporary page.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Researchion ·
+    <a class="min" href="mailto:researchion.project@gmail.com">Contact</a>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
